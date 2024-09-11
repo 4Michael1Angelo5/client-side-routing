@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/4michael1angelo5.github.io/client-side-routing/static/css/main.f855e6bc.css",
+    "main.js": "/4michael1angelo5.github.io/client-side-routing/static/js/main.e63f23ac.js",
+    "static/js/453.b1c46374.chunk.js": "/4michael1angelo5.github.io/client-side-routing/static/js/453.b1c46374.chunk.js",
+    "static/media/logo.svg": "/4michael1angelo5.github.io/client-side-routing/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/4michael1angelo5.github.io/client-side-routing/index.html",
+    "main.f855e6bc.css.map": "/4michael1angelo5.github.io/client-side-routing/static/css/main.f855e6bc.css.map",
+    "main.e63f23ac.js.map": "/4michael1angelo5.github.io/client-side-routing/static/js/main.e63f23ac.js.map",
+    "453.b1c46374.chunk.js.map": "/4michael1angelo5.github.io/client-side-routing/static/js/453.b1c46374.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.e63f23ac.js"
+  ]
+}
