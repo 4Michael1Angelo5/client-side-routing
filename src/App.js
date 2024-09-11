@@ -4,7 +4,7 @@ import AboutPage from './aboutPage';
 import ContactPage from './contactPage';
 import { BrowserRouter, Routes, Route , Link} from 'react-router-dom';
 
-const BASENAME = "/clientSideRouting"
+const BASENAME = "/client-side-routing"
 
 const HomePage = ()=>{
   return(
