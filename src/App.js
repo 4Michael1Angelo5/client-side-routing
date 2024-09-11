@@ -4,7 +4,13 @@ import AboutPage from './aboutPage';
 import ContactPage from './contactPage';
 import { BrowserRouter, Routes, Route , Link} from 'react-router-dom';
 
-const BASENAME = "/client-side-routing"
+// const BASENAME = "/client-side-routing"
+
+const BASENAME = process.env.PUBLIC_URL; 
+
+console.log(BASENAME, "this is the basename")
+
+ 
 
 const HomePage = ()=>{
   return(
@@ -34,17 +40,20 @@ const HomePage = ()=>{
 
 function App() {
   return (
+    <BrowserRouter basename ={BASENAME}>
 
     <div className="App">
-      <BrowserRouter basename ={BASENAME}>
+      
         <Routes>
           <Route path= {"/"} element = {<HomePage/>}/>
           <Route path = {'/about'} element = {<AboutPage/>}/>      
           <Route path = { '/contact'}  element = {<ContactPage/>}/>
         </Routes>
-      </BrowserRouter>
+     
 
     </div>
+
+    </BrowserRouter>
     
   );
 }
