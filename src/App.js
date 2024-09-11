@@ -3,13 +3,12 @@ import './App.css';
 import AboutPage from './aboutPage';
 import ContactPage from './contactPage';
 import { BrowserRouter, Routes, Route , Link} from 'react-router-dom';
+import Header from './header';
 
-const BASENAME = "/client-side-routing"
+// this should also be the name of repo and your react app
+// ex: https://your-user-name.github.io/YOUR-REPO-NAME where BASENAME = YOUR-REPO-NAME
 
-// const BASENAME = process.env.PUBLIC_URL; 
-
-console.log(BASENAME, "this is the basename");
- 
+const BASENAME = "/client-side-routing" 
 
 const HomePage = ()=>{
   return(
@@ -38,21 +37,24 @@ const HomePage = ()=>{
 
 
 function App() {
-  return (
-    <BrowserRouter basename ={BASENAME}>
 
-    <div className="App">
-      
-        <Routes>
-          <Route path= {"/"} element = {<HomePage/>}/>
-          <Route path = {'/about'} element = {<AboutPage/>}/>      
-          <Route path = { '/contact'}  element = {<ContactPage/>}/>
-        </Routes>
-     
+
+  return (
+    
+    <div className="App"> 
+    <BrowserRouter basename ={BASENAME}>
+      <Header/>     
+      <Routes>          
+        <Route path= {"/"} element = {<HomePage/>}/>
+        <Route path = {'/about'} element = {<AboutPage/>}/>      
+        <Route path = { '/contact'}  element = {<ContactPage/>}/>        
+      </Routes>
+
+      </BrowserRouter>    
 
     </div>
 
-    </BrowserRouter>
+    
     
   );
 }
