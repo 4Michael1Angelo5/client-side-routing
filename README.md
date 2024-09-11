@@ -21,3 +21,36 @@ GitHub Pages serves static files and doesn't support server-side routing. To han
    - The script in `index.html` reads the query parameters and redirects the user to the appropriate route in your SPA, ensuring smooth navigation.
 
 
+## How to Set Up
+
+1. **Create a GitHub repository**:
+   - Link your local repository to the remote repository using the command: 
+     ```bash
+     git remote add origin https://{your-username}.github.io/{your-repository-name}
+     ```
+   - Ensure the repository name matches your React app's name.
+
+2. **Install `gh-pages`**:
+   - Run the following command to add `gh-pages` to your app:
+     ```bash
+     npm install gh-pages --save-dev
+     ```
+   - Follow the steps provided by `gh-pages` to publish your app to the `gh-pages` branch.
+
+3. **Add `404.html`**:
+   - Copy the `404.html` file to your local repository, placing it in the root directory at the same level as `App.js`.
+
+4. **Optional Step**:
+   - Place a copy of `404.html` in the `public` folder. (This may not be necessary, but it won't hurt.)
+
+5. **Edit `index.html`**:
+   - In the `public` folder, update the `index.html` file to include the necessary script for client-side routing. Make sure the script runs before `App.js` is executed.
+
+6. **Deploy**:
+   - Follow the typical `gh-pages` deployment steps:
+     ```bash
+     git add .
+     git commit -m "client-side-routing fix"
+     git push
+     yarn deploy
+     ```
