@@ -4,12 +4,11 @@ import AboutPage from './aboutPage';
 import ContactPage from './contactPage';
 import { BrowserRouter, Routes, Route , Link} from 'react-router-dom';
 
-// const BASENAME = "/client-side-routing"
+const BASENAME = "/client-side-routing"
 
-const BASENAME = process.env.PUBLIC_URL; 
+// const BASENAME = process.env.PUBLIC_URL; 
 
-console.log(BASENAME, "this is the basename")
-
+console.log(BASENAME, "this is the basename");
  
 
 const HomePage = ()=>{
